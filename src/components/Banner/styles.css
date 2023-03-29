@@ -1,0 +1,43 @@
+div.banner {
+    flex: 1;
+    background-color: #D5DFF8;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    min-height: 450px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+div.banner.short {
+    min-height: 200px;
+}
+
+div.banner > p.banner-title {
+    /* background-color: palegoldenrod; */
+    width: 80%;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+div.banner > p.banner-subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+div.banner > p.banner-description {
+    font-size: 16px;
+    /* font-weight: 300; */
+    line-height: 1.3;
+    opacity: 0.75;
+    margin-bottom: 10px;
+}
+
+div.banner > div.tag-group {
+    display: flex;
+    gap: 10px;
+}

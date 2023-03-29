@@ -1,0 +1,23 @@
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+    background-color: #FFFFFF40;
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header > img.name-logo {
+    height: 10px;
+}
+
+header > nav {
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+}

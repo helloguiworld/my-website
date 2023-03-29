@@ -1,0 +1,10 @@
+div.tag {
+    background-color: #FFFFFF1A;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+div.tag > p {
+    font-size: 12px;
+    font-weight: 500;
+}

@@ -1,0 +1,7 @@
+div.banner-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    gap: 25px;
+}
