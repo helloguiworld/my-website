@@ -1,0 +1,6 @@
+button.button.banner-button {
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: calc(45px / 2);
+    line-height: 1.3;
+}

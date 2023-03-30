@@ -1,8 +1,18 @@
+import {
+    FaLinkedin,
+    FaGithub,
+    FaInstagram
+} from "react-icons/fa";
+
 import './styles.css';
+
+import colors from '../../colors';
 
 import Header from "../../components/Header";
 import BannerGroup from '../../components/BannerGroup';
 import Banner from '../../components/Banner';
+
+import HomeBanner from "./components/HomeBanner";
 
 import gradientImg from '../../assets/gradient.png';
 import myPhotoImg from '../../assets/my_photo.jpg';
@@ -15,47 +25,56 @@ export default function HomePage() {
             <Header />
             <main id='home-page'>
                 <BannerGroup>
-                    <Banner
+                    <HomeBanner
                         style={{
                             flex: 2,
                             backgroundImage: `url(${gradientImg})`,
-                            color: '#0D0E10',
+                            color: colors.black,
                         }}
                         title='Olá, sou o Gui, um dev aspirante a empreendedor e amande de design 👋'
-                    // description='Gosto de resolver problemas e otimizar experiências usando tecnologia.'
+                        titleDescription='Gosto de resolver problemas e otimizar experiências usando tecnologia.'
+                        // subtitle='EhPrimo?'
+                        // description='App lúdico e educativo sobre números primos'
+                        buttons={[
+                            'Contato',
+                            <FaLinkedin size={18} />,
+                            <FaGithub size={18} />,
+                            <FaInstagram size={18} />,
+                        ]}
                     />
-                    <Banner
+                    <HomeBanner
                         style={{
-                            maxWidth: '400px',
+                            // maxWidth: '400px',
                             backgroundImage: `url(${myPhotoImg})`,
                         }}
                     />
                 </BannerGroup>
 
-                <BannerGroup>
-                    <Banner
+                <BannerGroup tabletSensitive>
+                    <HomeBanner
                         style={{
-                            backgroundColor: '#807FCF',
+                            backgroundColor: colors.ehPrimoBg,
                             backgroundImage: `url(${ehPrimoBannerImg})`,
+                            color: colors.ehPrimoContrast,
                         }}
                         subtitle='EhPrimo?'
                         description='App lúdico e educativo sobre números primos'
                         tags={['Aplicativo', 'API']}
                     />
-                    <Banner
+                    <HomeBanner
                         style={{
-                            backgroundColor: '#EBEFFA',
+                            backgroundColor: colors.portalBCFCBg,
                             backgroundImage: `url(${portalBCFCBannerImg})`,
-                            color: '#0F0963',
+                            color: colors.portalBCFCContrast,
                         }}
                         subtitle='Portal BCFC'
                         description='Sistema para franquia de academias de treino de futebol'
                         tags={['Sistema Web']}
-                        />
+                    />
                 </BannerGroup>
 
                 <BannerGroup>
-                    <Banner
+                    <HomeBanner
                         style={{
                             backgroundColor: '#E8F9F1',
                             color: '#076438',

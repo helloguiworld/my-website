@@ -4,7 +4,7 @@ import {
 
 import './styles.css';
 
-import nameLogo from '../../assets/name_logo.png';
+import nameLogo from '../../assets/name_logo.svg';
 
 export default function Header() {
     return (
@@ -12,10 +12,10 @@ export default function Header() {
             <img src={nameLogo} alt="Logo" className="name-logo"/>
             
             <nav>
-                <Link>Início</Link>
-                <Link>Sobre mim</Link>
+                <Link to='/'>Início</Link>
+                {/* <Link>Sobre mim</Link>
                 <Link>Projetos</Link>
-                <Link>Contato</Link>
+                <Link>Contato</Link> */}
             </nav>
         </header>
     );

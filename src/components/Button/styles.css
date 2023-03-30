@@ -1,0 +1,13 @@
+button.button {
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 2px 20px 0 #1E1E1E20;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.button:hover {
+    box-shadow: 0 5px 20px 0 #1E1E1E40;
+}
