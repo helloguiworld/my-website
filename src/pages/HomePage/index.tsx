@@ -56,6 +56,10 @@ export default function HomePage() {
                             backgroundColor: colors.ehPrimoBg,
                             backgroundImage: `url(${ehPrimoBannerImg})`,
                             color: colors.ehPrimoContrast,
+                            
+                        }}
+                        hoverStyle={{
+                            borderColor: "#392f80"
                         }}
                         subtitle='EhPrimo?'
                         description='App lúdico e educativo sobre números primos'

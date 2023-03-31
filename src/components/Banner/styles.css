@@ -7,6 +7,7 @@ div.banner {
     min-height: 450px;
     border-radius: 25px;
     padding: 40px;
+    transition: .3s;
 
     display: flex;
     flex-direction: column;

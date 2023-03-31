@@ -1,26 +1,33 @@
 import './styles.css';
 
-import Banner from '../../../../components/Banner';
 import { ButtonProps } from '../../../../components/Button';
-import BannerButton from '../../../../components/Banner/components/BannerButton';
+import Banner from '../../../../components/Banner';
 import Tag from '../../../../components/Tag';
+import BannerButton from '../../../../components/Banner/components/BannerButton';
 
 type HomeBannerProps = {
     short?: boolean,
+
     style?: React.CSSProperties,
+    hoverStyle?: React.CSSProperties,
+
     title?: string,
     titleDescription?: string,
     subtitle?: string,
     description?: string,
+    
     tags?: string[],
     buttons?: (ButtonProps['children'])[],
 }
 
 export default function HomeBanner(props: HomeBannerProps) {
+
     return (
         <Banner
-            className={"home-banner" + (props.short ? " short" : "")}
+            short={props.short}
+            className={"home-banner"}
             style={props.style}
+            hoverStyle={props.hoverStyle}
         >
             <div className="home-banner-header">
                 {props.title && <p className='home-banner-title'>{props.title}</p>}
