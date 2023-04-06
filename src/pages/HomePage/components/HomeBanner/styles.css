@@ -3,13 +3,23 @@ div.home-banner {
     border: 2px solid transparent;
     justify-content: space-between;
 }
+
 div.home-banner:hover {
     border-color: unset;
 }
 
 div.home-banner-header {
-    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: end;
+    /* gap: 20px; */
+}
+
+div.home-banner-header-texts {
     /* background-color: pink; */
+    flex: 1;
+    align-self: flex-start;
+    padding-right: 20%;
 }
 
 p.home-banner-title {
@@ -50,6 +60,12 @@ div.home-banner-header-tag-group {
     gap: 10px;
 }
 
+div.home-banner-header-buttons {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
 div.home-banner-buttons {
     /* background-color: pink; */
     display: flex;
@@ -57,10 +73,15 @@ div.home-banner-buttons {
 }
 
 @media screen and (max-width: 1023px) {
-    div.home-banner-header {
-        width: 90%;
+    /* div.home-banner-header {
+        gap: 15px;
+    } */
+
+    div.home-banner-header-texts {
+        /* background-color: pink; */
+        padding-right: 10%;
     }
-    
+
     p.home-banner-title {
         font-size: 36px;
     }
@@ -76,10 +97,10 @@ div.home-banner-buttons {
 }
 
 @media screen and (max-width: 767px) {
-    /* div.home-banner-header {
+    /* div.home-banner-header-texts {
         width: unset;
     } */
-    
+
     p.home-banner-title {
         font-size: 30px;
     }
@@ -92,4 +113,8 @@ div.home-banner-buttons {
     /* p.home-banner-description {
         font-size: 12px;
     } */
+
+    div.home-banner-header-buttons {
+        flex-direction: column;
+    }
 }

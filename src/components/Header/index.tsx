@@ -13,9 +13,9 @@ export default function Header() {
             
             <nav>
                 <Link to='/'>Início</Link>
-                {/* <Link>Sobre mim</Link>
-                <Link>Projetos</Link>
-                <Link>Contato</Link> */}
+                {/* <Link to='/about-me'>Sobre mim</Link> */}
+                {/* <Link>Projetos</Link> */}
+                {/* <Link>Contato</Link> */}
             </nav>
         </header>
     );

@@ -58,6 +58,7 @@ a:hover {
 }
 
 button {
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #1E1E1E;
   padding: 5px 10px;
@@ -65,20 +66,59 @@ button {
   border-radius: 5px;
   transition: .4s;
 }
+
 button:hover {
   background-color: #1E1E1E;
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
-button.black {
+
+button.dark {
   background-color: #1E1E1E;
   color: #FFFFFF;
 }
-button.black:hover {
+
+button.dark:hover {
   background-color: #FFFFFF;
   color: #1E1E1E;
   border-color: #1E1E1E;
 }
+
+button.ehprimo {
+  background-color: #FEFEFE;
+  color: #5050A8;
+}
+
+button.ehprimo:hover {
+  background-color: #5050A8;
+  color: #FEFEFE;
+  border-color: #FEFEFE;
+}
+
+button.dark-ehprimo {
+  background-color: #392f80;
+  color: #FEFEFE;
+}
+
+button.dark-ehprimo:hover {
+  background-color: #FEFEFE;
+  color: #392f80;
+  border-color: #392f80;
+}
+
+button.blur {
+  background-color: #FFFFFF80;;
+  color: #FEFEFE;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+button.blur:hover {
+  background-color: #FEFEFE;
+  color: #343434;
+  border-color: #7B7B7B;
+}
+
 /* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
