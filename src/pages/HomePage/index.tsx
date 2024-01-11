@@ -10,6 +10,7 @@ import './styles.css';
 import colors from '../../colors';
 
 import Header from "../../components/Header";
+import PageMainArea from "../../components/PageMainArea";
 import BannerGroup from '../../components/BannerGroup';
 import HomeBanner from "./components/HomeBanner";
 
@@ -56,7 +57,7 @@ export default function HomePage() {
     return (
         <>
             <Header />
-            <main id='home-page'>
+            <PageMainArea id='home-page'>
                 <BannerGroup>
                     <HomeBanner
                         style={{
@@ -112,9 +113,8 @@ export default function HomePage() {
                     }}
                     subtitle='achaKi'
                     description='Vem aí... 👀'
-                // tags={['Sistema Web', 'API']}
                 />
-            </main>
+            </PageMainArea>
         </>
     );
 }

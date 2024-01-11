@@ -1,0 +1,21 @@
+main.page-main-area {
+    flex: 1;
+    padding: 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+    main.page-main-area {
+        padding: 0 20px 20px;
+        gap: 20px;
+    }
+}
+
+/* @media screen and (max-width: 767px) {
+    main.page-main-area {
+        padding: 0 15px 15px;
+        gap: 15px;
+    }
+} */
